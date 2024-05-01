@@ -4,21 +4,10 @@
   "main": "dist/index",
   "typings": "dist/index",
   "description": "Locate images on your screen using template matching in nut.js or standalone",
-  "author": {
-    "name": "Siarhei Kliushnikau",
-    "email": "sergey.klyshnikov2@gmail.com"
-  },
   "license": "Apache 2.0",
   "files": [
     "dist"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/udarrr/TemplateMatcher.git"
-  },
-  "bugs": {
-    "url": "https://github.com/udarrr/TemplateMatcher/issues"
-  },
   "os": [
     "linux",
     "darwin",
@@ -54,7 +43,7 @@
   },
   "dependencies": {
     "opencv4nodejs-prebuilt-install": "^4.1.202",
-    "@nut-tree/nut-js": "^3.1.2"
+    "@nut-tree/nut-js": "https://github.com/gokul-plena/nut.js"
   },
   "devDependencies": {
     "@types/jest": "27.4.1",
