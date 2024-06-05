@@ -1,9 +1,13 @@
 {
-  "name": "@udarrr/template-matcher",
-  "version": "4.5.4",
+  "name": "@plena-data/template-matcher",
+  "version": "1.0.1",
   "main": "dist/index",
   "typings": "dist/index",
   "description": "Locate images on your screen using template matching in nut.js or standalone",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/plena-data/platform-lib.git"
+  },
   "license": "Apache 2.0",
   "files": [
     "dist"
@@ -39,11 +43,12 @@
     "compile": "npm run clean && tsc -p .",
     "pack": "npm pack",
     "test": "jest --runInBand",
-    "publish_package": "npm publish --tag latest --access=public"
+    "publish_package": "npm publish --tag latest"
   },
   "dependencies": {
-    "opencv4nodejs-prebuilt-install": "^4.1.202",
-    "@nut-tree/nut-js": "npm:@potatoranch/nut-js@^4.2.1-next.20240523180228"
+    "@nut-tree/nut-js": "npm:@kirillvakalov/nut-tree__nut-js@^4.2.1-2",
+    "clean-package": "^2.2.0",
+    "opencv4nodejs-prebuilt-install": "^4.1.202"
   },
   "devDependencies": {
     "@types/jest": "27.4.1",
@@ -56,5 +61,8 @@
   },
   "engines": {
     "node": ">=12.0.0 <21.0.0"
+  },
+  "publishConfig": {
+    "@plena-data:registry": "https://npm.pkg.github.com"
   }
 }
